@@ -1,0 +1,73 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  template: `
+    <h1 class="Acceuil">Accueil</h1>
+    <h2 class="Menu">Menu</h2>
+    <h2 class="ListeRSSI">Liste du RSSI</h2>
+    <table class="tableau">
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Role</th>
+          <th>Affectation</th>
+        </tr>
+      </thead>
+    <tbody>
+      <tr>
+        <td>Nom exmple</td>
+        <td>Role exemple</td>
+        <td>Affectation exmple</td>
+      </tr>
+    </tbody>
+    </table>
+    <div class="trait"></div>
+    <button class="ajouter">Ajouter</button>
+  `,
+  styles: [`     
+    .Acceuil {
+      margin-top: 20px;   
+      margin-left: 10px;
+    }
+    .Menu {
+      margin-top: 20px;   
+      margin-left: 10px;
+    }
+    .ListeRSSI {
+      margin-top: 20px;   
+      margin-left: 200px;
+    }
+    .trait {
+      border-left: 2px solid black; 
+      height: 380px;        
+      margin: 150px;
+      margin-top: -190px;
+      margin-left: 160px;
+    }
+    .ajouter {
+      height: 20px;
+      position: relative;
+      top: -470px;   
+      left: 370px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .ajouter:hover {
+      background: #57635a;
+    }
+    .tableau {
+      border-collapse: collapse;
+      width: 60%;
+      margin-top: 10px;
+      margin-left: 190px;
+    }
+    .tableau th, .tableau td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+  `]
+})
+export class App {
+  title = 'default';
+}
